@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập / Đăng ký</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-section">
+            <div class="auth-form auth-form--login">
+                <h2 class="auth-form__heading">Đăng nhập</h2>
+                <div class="auth-form__form">
+                    <input type="text" class="auth-form__input" placeholder="Nhập email hoặc số điện thoại">
+                    <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
+                </div>
+                <button class="btn btn--primary" onclick="login()">ĐĂNG NHẬP</button>
+                <p class="switch-form">Chưa có tài khoản? <span onclick="toggleForm()">Đăng ký</span></p>
+            </div>
+            
+            <div class="auth-form auth-form--register hidden">
+                <h2 class="auth-form__heading">Đăng ký</h2>
+                <div class="auth-form__form">
+                    <input type="text" class="auth-form__input" placeholder="Nhập email">
+                    <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
+                    <input type="password" class="auth-form__input" placeholder="Xác nhận mật khẩu">
+                </div>
+                <button class="btn btn--primary" onclick="register()">ĐĂNG KÝ</button>
+                <p class="switch-form">Đã có tài khoản? <span onclick="toggleForm()">Đăng nhập</span></p>
+            </div>
+        </div>
+        
+        <div class="image-section">
+            <div class="image-overlay">
+                <img src="logo.png" alt="Logo" class="logo">
+                <div class="illustration">
+                    <img src="background.png" alt="Illustration" class="background-image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
